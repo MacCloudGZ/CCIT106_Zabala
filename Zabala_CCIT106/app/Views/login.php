@@ -7,9 +7,10 @@
     <title>Login</title>
 </head>
 <body>
+    <a href="/ welcome_message">go back</a>
     <div class="container">
         <div class="login-area">
-            
+            login
         </div>
     </div>
 </body>
