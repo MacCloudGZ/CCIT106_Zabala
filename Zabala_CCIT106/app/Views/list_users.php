@@ -21,6 +21,10 @@
             <td><?= $user['firstname'] ?></td>
             <td><?= $user['middlename'] ?></td>
             <td><?= $user['lastname'] ?></td>
+            <td>
+                <a href="#">Edit</a> | 
+                <a href="<?= base_url('users/delete/'.$user['id']) ?>"onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
+            </td>
         </tr>
         <?php endforeach; ?>
     </table>
