@@ -9,11 +9,11 @@
     <h1>create User Forms</h1>
     <form action="<?=base_url('users/store') ?>" method="post">
         <label for="firstname">Firstname:</label>
-        <input type="text" id="firstname" required><br>
+        <input type="text" id="firstname" name="firstname" required><br>
         <label for="middlename">MiddleName:</label>
-        <input type="text" id="middlename"><br>
+        <input type="text" id="middlename" name="middlename"><br>
         <label for="lastname">lastname:</label>
-        <input type="text" id="lastname" required><br>
+        <input type="text" id="lastname" name="lastname" required><br>
         <input type="submit" value="Create User">
     </form>
 </body>

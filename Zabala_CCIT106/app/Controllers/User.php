@@ -24,6 +24,11 @@ class User extends BaseController
 
         $userModel->insert($data);
 
-        return redirect()->to('/')->with('success', 'User created successfully');
+        return redirect()->to('users/store')->with('success', 'User created successfully');
+    }
+    public function getlist(){
+        $userModel = new UserModel();
+        $data['users'] = $userModel->findAll();
+        return view('list_users', $data);
     }
 }

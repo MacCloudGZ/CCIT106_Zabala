@@ -8,4 +8,6 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('Login', 'Login::index');
 $routes->get('Register', 'Register::index');
-$routes->get('user/store', 'User::create');
+$routes->get('users/store', 'User::create');
+$routes->post('users/store', 'User::store');
+$routes->get('users/list', 'User::getlist');

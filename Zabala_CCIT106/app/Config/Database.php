@@ -27,7 +27,7 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
+        'username'     => '127.0.0.1',
         'password'     => 'root',
         'database'     => 'maccloud',
         'DBDriver'     => 'MySQLi',
